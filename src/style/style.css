@@ -1,0 +1,192 @@
+body {
+  background-color: rgb(218, 172, 151);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 20px;
+	color: white;
+	background-size:cover;
+  background-image: url("../image/bg.png");
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  display: block; 
+}
+
+.search-active .content {
+  display: none; 
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 50px; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4x;
+  padding: 20px;
+  background-color: #FFDDCC;
+  position: relative;
+  width: 95%; 
+}
+
+main {
+  padding: 10px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  background-color: #f0ceb5;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: aqua;
+}
+
+.search {
+  display: flex;
+  margin: 0 auto;
+  max-width: 500px;
+  justify-content: center;
+}
+
+#masukanItem {
+  height: 40px;
+  width: 50%;
+  border: 3px solid rgb(208, 184, 168);
+  border-radius: 6px;
+}
+
+#searchButton {
+  width: 25%;
+  height: 38px;
+  border: 3px solid rgb(208, 184, 168);
+  margin-left: 9px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 5em;
+}
+
+#searchButton:hover {
+  background-color: rgb(133, 88, 111);
+  color: white;
+  border: 2px solid black;
+}
+
+#hasilPencarianFilm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+#daftarHasilPencarianFilm {
+  width: 610px;
+  border: 2px solid rgb(104, 68, 21);
+  padding: 23px;
+  margin: 20px 4px;
+  border-radius: 6px;
+  background-color: rgb(151, 114, 80);
+}
+
+#daftarHasilPencarianFilm > img {
+  padding-top: 6px;
+  width: 98px;
+  height: 99px;
+  display: block;
+  margin: auto;
+}
+
+#daftarHasilPencarianFilm > .detailHasilPencarianFilm {
+  padding: 10px;
+}
+
+#daftarHasilPencarianFilm > .detailHasilPencarianFilm > h3 {
+  text-align: center;
+  margin: 7px;
+}
+
+#daftarHasilPencarianFilm > .detailHasilPencarianFilm > p {
+  margin: 6px;
+}
+
+.tombol {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  border: 2px solid rgb(238, 162, 130);
+  margin-bottom: 0;
+}
+
+.tombol > button {
+  color: rgb(224, 177, 217);
+  align-items: flex-end;
+}
+
+.eror {
+  display: block;
+  margin: auto;
+  text-align: center;
+  line-height: 22px;
+}
+
+.eror > h2 {
+  color: red;
+}
+
+.eror > p {
+  line-height: 0px;
+}
+
+@media screen and (max-width: 460px) {
+  #searchButton {
+    width: 25%;
+  }
+}
